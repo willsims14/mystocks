@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Stocks</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="container text-center">
+        <div class="row"><h1 class="display-1 col-sm-12">Stock Watch</h1></div>
+    </div>
+    <div class="row">
+    <div class="tradingview-widget-container col-sm-12">
+      <div id="tv-medium-widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.MediumWidget(
+      {
+      "container_id": "tv-medium-widget",
+      "symbols": [
+        [
+          "Verisign",
+          "NASDAQ:VRSN|3m"
+        ],
+        [
+          "Microsoft",
+          "MSFT|3m"
+        ],
+        [
+          "Google",
+          "NASDAQ:GOOG|3m"
+        ]
+      ],
+      "greyText": "Quotes by",
+      "gridLineColor": "#e9e9ea",
+      "fontColor": "#83888D",
+      "underLineColor": "#dbeffb",
+      "trendLineColor": "#4bafe9",
+      "locale": "en",
+      "width": "1000",
+      "height": "500",
+    }
+      );
+      </script>
+    </div>
+<!-- TradingView Widget END -->
+</div>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
